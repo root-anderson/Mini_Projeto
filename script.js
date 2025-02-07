@@ -55,16 +55,16 @@ function openModal(location = null) {
   modal.classList.add('active');
   if (location) {
     editingLocationId = location.id;
-    modalTitle.textContent = 'Edit Location';
+    modalTitle.textContent = 'Editar Local';
     locationForm.title.value = location.title;
     locationForm.description.value = location.description;
     locationForm.photo.value = location.photo;
-    locationForm.querySelector('button[type="submit"]').textContent = 'Update Location';
+    locationForm.querySelector('button[type="submit"]').textContent = 'Atualizar Local';
   } else {
     editingLocationId = null;
-    modalTitle.textContent = 'Add New Location';
+    modalTitle.textContent = 'Adicionar Local';
     locationForm.reset();
-    locationForm.querySelector('button[type="submit"]').textContent = 'Add Location';
+    locationForm.querySelector('button[type="submit"]').textContent = 'Adicionar Local';
   }
 }
 
